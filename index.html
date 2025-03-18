@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Message Emoji 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>I Love You, (NAMA)!! ❤️</h1>
+    <p>Keep fighting, my love. You're amazing and I believe in you!</p>
+
+    <div class="emoji-container">
+      <span class="emoji" onclick="showMessage('❤️')">❤️</span>
+      <span class="emoji" onclick="showMessage('😊')">😊</span>
+      <span class="emoji" onclick="showMessage('🌸')">🌸</span>
+      <span class="emoji" onclick="showMessage('🌟')">🌟</span>
+    </div>
+
+    <div id="hidden-message" class="hidden-message"></div>
+
+    <div class="music-controls">
+      <button id="toggle-music" onclick="toggleMusic()" aria-label="Toggle background music">Start Music</button>
+      <button id="toggle-volume" onclick="toggleVolume()" aria-label="Toggle volume">🔊</button>
+      <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div id="particle-container"></div>
+
+    <audio id="click-sound" src="click-sound.mp3" preload="auto"></audio>
+    <audio id="volume-change-sound" src="volume-change.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
